@@ -69,6 +69,55 @@ p {
   padding-bottom: 0;
 }
 
-#header .content-wrap {
+#header .content-wrap,
+#section-a .content-wrap {
   padding: 0 1.5rem;
+}
+
+/* Section A */
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2rem;
+}
+
+/* Section B */
+#section-b {
+  padding: 2rem 1rem 1rem;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1rem;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Section C */
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2rem;
+}
+
+/* Section D */
+
+#section-d .box {
+  padding: 2rem;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
 }
