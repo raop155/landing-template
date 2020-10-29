@@ -61,7 +61,7 @@ p {
   width: 100%;
   height: 450px;
   z-index: -1;
-  opacity: 0.25;
+  opacity: 0.1;
 }
 
 #header h1 {
@@ -120,4 +120,55 @@ p {
 
 #section-d .box:first-child {
   background: #2690d4;
+}
+
+/* Footer */
+
+#footer {
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25rem)) 1fr;
+  }
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
 }
